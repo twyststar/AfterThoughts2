@@ -15,8 +15,8 @@
 <br>
 <label>Current Club Focus?:</label>
 <select [(ngModel)]="selectedBook.current">
-  <option value=true>Yes</option>
-  <option value=false>No</option>
+  <option value="current">Yes</option>
+  <option value="past">No</option>
 </select>
 <br>
 <button (click)="beginUpdatingBook(selectedBook)">Update</button>

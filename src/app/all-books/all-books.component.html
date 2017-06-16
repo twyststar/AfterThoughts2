@@ -1,0 +1,16 @@
+<h2>Books We Are Reading Now:</h2>
+<h4>Click for more details, or to leave comments or reviews...but remember!! We are working our way through these ones now- so PLEASE no spoilers!</h4>
+<div *ngFor="let book of books | async | current" class="panel panel-default">
+  <div class="panel-body">
+  <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+  <h5>{{book.description}}</h5>
+  </div>
+</div>
+<h2>Past Club Books:</h2>
+<h4>These ones are no longer current focus, but still worth looking into! Beware, comments may contain spoilers!</h4>
+<div *ngFor="let book of books | async | past" class="panel panel-default">
+  <div class="panel-body">
+  <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+  <h5>{{book.description}}</h5>
+  </div>
+</div>

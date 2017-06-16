@@ -1,3 +1,18 @@
+body {
+  background-image: url('https://www.readers.com/blog/wp-content/uploads/2012/06/fendi_rose-3-1024x678.jpg');
+
+}
+.container {
+  background-color: #fff3e2;
+}
+.well {
+  background-color: #c9c1b7;
+}
+.jumbotron {
+  background-color: #8c7a62;
+  color: white;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -12,4 +27,9 @@
   width: auto;
   border: 2px solid gray;
   border-radius: 3%;
+}
+
+.linky:hover {
+  text-decoration: underline;
+  color: #45b237;
 }

@@ -1,0 +1,11 @@
+
+<div *ngFor="let user of users | async"  class="">
+  <h4 class='linky' (click)="goToProfilePage(user)"><em>{{user.name}}</em></h4>
+  <h5>'{{user.quote}}'</h5>
+  <div *ngIf="currentRoute === '/admin'">
+    <p>{{user.bio}}</p>
+
+    <app-edit-user [selectedUser]="user"></app-edit-user>
+  </div>
+  <hr>
+</div>

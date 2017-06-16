@@ -1,14 +1,25 @@
 Planning/Goals
 
-Required features:
-* User can visit a page to see a list of all club members.
-* User can click a club member's entry to visit their profile page, which will include more details about them.
-* User can visit an "About" page that explains what the club is, and what they do.
-* All data is persisted in a database, so it's always there when I need it.
-* User can filter the list of users by some information/category.
-* Administrator can add new users to the club. (User authentication is not required).
-* Administrator can edit user profiles.
-* Administrator can delete a user.
++ indicates goal met
+-- notes
+
++Required features:
+
++* User can visit a page to see a list of all club members.
+
++* User can click a club member's entry to visit their profile page, which will include more details about them.
+
++* User can visit an "About" page that explains what the club is, and what they do.
+
++* All data is persisted in a database, so it's always there when I need it.
+
++* User can filter the list of users by some information/category.--books are filtered instead of users--
+
++* Administrator can add new users to the club. (User authentication is not required).
+
++* Administrator can edit user profiles.
+
++* Administrator can delete a user.
 
 Suggested stretch goals:
 
@@ -20,14 +31,18 @@ Suggested stretch goals:
 
 Stretch Goals:
 
-* Add relevant styling to all aspects of the page, in a cohesive theme.
-* Add specific book objects that can be dynamically routed to
++* Add relevant styling to all aspects of the page, in a cohesive theme.
+
++* Add specific book objects that can be dynamically routed to
   * Add user comments to books
   * Add reply directly to comments
+
 * Add ability to check which club books a user has read, and add that list to their profile.
+
 * Add user rating system for club books
   * Rating average and number of ratings to be displayed with book
   * Users can rate books
+
 * Explore color/icons etc to style README
 
 Objects:

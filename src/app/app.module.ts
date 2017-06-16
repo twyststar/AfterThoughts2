@@ -15,6 +15,12 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { BookListComponent } from './book-list/book-list.component';
+import { AllBooksComponent } from './all-books/all-books.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { CurrentPipe } from './current.pipe';
+import { PastPipe } from './past.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +38,13 @@ export const firebaseConfig = {
     UserProfileComponent,
     AdminComponent,
     EditBookComponent,
-    EditUserComponent
+    EditUserComponent,
+    UserListComponent,
+    BookListComponent,
+    AllBooksComponent,
+    NewUserComponent,
+    CurrentPipe,
+    PastPipe
   ],
   imports: [
     BrowserModule,

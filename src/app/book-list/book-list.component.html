@@ -1,0 +1,8 @@
+<div *ngFor="let book of books | async" class="panel panel-default">
+  <div class="panel-body">
+  <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <app-edit-book [selectedBook]="book"></app-edit-book>
+  </div>
+  </div>
+</div>

@@ -19,13 +19,9 @@ export class WelcomeComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
-  
-  goToDetailPage(clickedBook){
-    this.router.navigate(['books', clickedBook.$key]);
-  }
-  goToProfilePage(clickedUser){
-    this.router.navigate(['users', clickedUser.$key]);
-  }
+
+
+
 
   constructor(private router: Router, private bookService: BookService, private userService: UserService) { }
 
