@@ -1,3 +1,23 @@
-<p>
-  welcome works!
-</p>
+
+<div class="row">
+  <div class="col-xs-3">
+    <div *ngFor="let user of users | async" (click)="goToProfilePage(user)" class="">
+      <h4><em>{{user.name}}</em></h4>
+      </div>
+    </div>
+
+
+  <div class="col-xs-6">
+    <h2>What we're reading:</h2>
+    <div *ngFor="let book of books | async" (click)="goToDetailPage(book)" class="panel panel-default">
+      <div class="panel-body">
+      <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+      <h3>{{book.$key}}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-3">
+    not sure what's going here
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-6 well">
+  <h3>Add New Book to Our Reading List</h3>
+
+    <div>
+      <label>Book Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Book Author:</label>
+      <br>
+      <input #newAuthor>
+    </div>
+
+    <div>
+      <label>Book Description:</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
+
+    <div>
+      <label>Publication Year:</label>
+      <br>
+      <input #newPublished>
+    </div>
+
+    <div>
+      <label>Current Club Focus?:</label>
+      <select #newCurrent>
+        <option value=true>Yes</option>
+        <option value=false>No</option>
+      </select>
+    </div>
+    <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newPublished.value, newCurrent.value); newTitle.value=''; newAuthor.value=''; newDescription.value=''; newPublished.value=''; newCurrent.value=''">Add</button>
+    <br>
+  </div>
+  <div class="col-xs-6 well">
+  <h3>Add New User to Our Club</h3>
+
+    <div>
+      <label>User Name:</label>
+      <br>
+      <input #newName>
+    </div>
+    <div>
+      <label>User Bio:</label>
+      <br>
+      <textarea #newBio></textarea>
+    </div>
+    <div>
+      <label>User image url</label>
+      <br>
+      <input #newImg>
+    </div>
+    <div>
+      <label>Favorite Books:</label>
+      <br>
+      <input #newFavorites>
+    </div>
+    <div>
+      <label>Profile Quote:</label>
+      <br>
+      <input #newQuote>
+    </div>
+    <button (click)="submitUserForm(newName.value, newBio.value, newImg.value, newFavorites.value, newQuote.value); newName.value=''; newBio.value=''; newImg.value=''; newFavorites.value=''; newQuote.value=''">Add</button>
+    <br>
+  </div>
+
+</div>

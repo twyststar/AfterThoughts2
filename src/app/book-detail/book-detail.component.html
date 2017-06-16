@@ -1,3 +1,5 @@
-<p>
-  book-detail works!
-</p>
+
+  <h2>{{(bookToDisplay | async)?.title}}</h2>
+  <h3>{{(bookToDisplay | async)?.author}}</h3>
+  <p>Published: {{(bookToDisplay | async)?.published}}</p>
+  <h5>{{(bookToDisplay | async)?.description}}</h5>

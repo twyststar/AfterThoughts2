@@ -1,3 +1,5 @@
-<p>
-  user-profile works!
-</p>
+<h2>{{(userToDisplay | async)?.name}}</h2>
+<h3>{{(userToDisplay | async)?.quote}}</h3>
+<p>Bio: {{(userToDisplay | async)?.bio}}</p>
+<h6>Favorite books: {{(userToDisplay | async)?.favorites}}</h6>
+<img class="userPic" src="{{(userToDisplay | async)?.img}}" alt="image?">
