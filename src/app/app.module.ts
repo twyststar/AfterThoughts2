@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +30,9 @@ export const firebaseConfig = {
     AboutComponent,
     BookDetailComponent,
     UserProfileComponent,
-    AdminComponent
+    AdminComponent,
+    EditBookComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

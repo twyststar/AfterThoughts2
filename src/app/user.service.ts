@@ -21,4 +21,20 @@ export class UserService {
   getUserById(userId: string){
     return this.database.object('users/' + userId);
   }
+
+  updateUser(localUpdatedUser){
+    var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
+    userEntryInFirebase.update({name: localUpdatedUser.name,
+                                quote: localUpdatedUser.quote,
+                                bio: localUpdatedUser.bio,
+                                img: localUpdatedUser.img,
+                                favorites: localUpdatedUser.favorites,
+
+                              });
+  }
+
+  deleteUser(localUserToDelete){
+    var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+    userEntryInFirebase.remove();
+  }
 }

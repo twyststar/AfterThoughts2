@@ -1,0 +1,24 @@
+<h4>Edit Book</h4>
+
+<label>Book Title:</label>
+<input [(ngModel)]="selectedBook.title">
+<br>
+<label>Author:</label>
+<input [(ngModel)]="selectedBook.author">
+<br>
+<label>Book Description:</label>
+<br>
+<textarea rows=6 [(ngModel)]="selectedBook.description"></textarea>
+<br>
+<label>Published Year:</label>
+<input [(ngModel)]="selectedBook.published">
+<br>
+<label>Current Club Focus?:</label>
+<select [(ngModel)]="selectedBook.current">
+  <option value=true>Yes</option>
+  <option value=false>No</option>
+</select>
+<br>
+<button (click)="beginUpdatingBook(selectedBook)">Update</button>
+<br>
+<button class="bg-danger" (click)="beginDeletingBook(selectedBook)">Delete</button>

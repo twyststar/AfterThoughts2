@@ -33,11 +33,13 @@
         <option value=false>No</option>
       </select>
     </div>
+    <br>
+    <br>
     <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newPublished.value, newCurrent.value); newTitle.value=''; newAuthor.value=''; newDescription.value=''; newPublished.value=''; newCurrent.value=''">Add</button>
     <br>
   </div>
   <div class="col-xs-6 well">
-  <h3>Add New User to Our Club</h3>
+  <h3>Add New Member to Our Club</h3>
 
     <div>
       <label>User Name:</label>
@@ -45,12 +47,12 @@
       <input #newName>
     </div>
     <div>
-      <label>User Bio:</label>
+      <label>Bio:</label>
       <br>
       <textarea #newBio></textarea>
     </div>
     <div>
-      <label>User image url</label>
+      <label>Image url</label>
       <br>
       <input #newImg>
     </div>
@@ -63,9 +65,17 @@
       <label>Profile Quote:</label>
       <br>
       <input #newQuote>
+      <br>
     </div>
+    <br>
     <button (click)="submitUserForm(newName.value, newBio.value, newImg.value, newFavorites.value, newQuote.value); newName.value=''; newBio.value=''; newImg.value=''; newFavorites.value=''; newQuote.value=''">Add</button>
     <br>
   </div>
+
+</div>
+<div class="well">
+
+    <h3>Edit</h3>
+    <app-welcome></app-welcome>
 
 </div>

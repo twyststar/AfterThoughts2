@@ -6,3 +6,10 @@
   background-color: #f5f5f5;
   padding: 15px;
 }
+
+.userPic {
+  height: 250px;
+  width: auto;
+  border: 2px solid gray;
+  border-radius: 3%;
+}

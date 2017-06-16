@@ -1,23 +1,35 @@
 
 <div class="row">
   <div class="col-xs-3">
-    <div *ngFor="let user of users | async" (click)="goToProfilePage(user)" class="">
-      <h4><em>{{user.name}}</em></h4>
+    <h3>Our members:</h3>
+    <div *ngFor="let user of users | async"  class="">
+      <h4 (click)="goToProfilePage(user)"><em>{{user.name}}</em></h4>
+
+      <div *ngIf="currentRoute === '/admin'">
+        <p>{{user.bio}}</p>
+        <h5>'{{user.quote}}'</h5>
+        <app-edit-user [selectedUser]="user"></app-edit-user>
+      </div>
+      <hr>
       </div>
     </div>
 
 
   <div class="col-xs-6">
     <h2>What we're reading:</h2>
-    <div *ngFor="let book of books | async" (click)="goToDetailPage(book)" class="panel panel-default">
+    <div *ngFor="let book of books | async" class="panel panel-default">
       <div class="panel-body">
-      <h3><em>{{book.title}}</em> by {{book.author}}</h3>
-      <h3>{{book.$key}}</h3>
+      <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <app-edit-book [selectedBook]="book"></app-edit-book>
+      </div>
       </div>
     </div>
   </div>
-
-  <div class="col-xs-3">
-    not sure what's going here
+  <div *ngIf="currentRoute != '/admin'">
+    <div class="col-xs-3">
+      not sure what's going here
+    </div>
   </div>
+
 </div>

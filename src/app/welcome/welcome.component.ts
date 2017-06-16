@@ -17,7 +17,9 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class WelcomeComponent implements OnInit {
   books: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
+  
   goToDetailPage(clickedBook){
     this.router.navigate(['books', clickedBook.$key]);
   }
