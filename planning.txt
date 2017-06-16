@@ -32,19 +32,16 @@ Stretch Goals:
 
 Objects:
   * User
-    Name, bio,
+    Name, Bio, Img, FavBooks[]opt, Quote opt,
     * Possibly club books read array
-
   * Book
-    Title, Author, Description, Publish Date
+    Title, Author, Description, Publish Date, Current(boolean)
     * Spot for images? Optional
     * User reviews
-
   Possible Further Objects:
     Reviews
       Text, Rating
       * Belongs to book
-
     Comments
       Text, Date
       * Belongs to user, visible on message board area?
@@ -52,3 +49,23 @@ Objects:
     Replies
       Text, Date
       * Belongs to comment, visible on comment thread?
+
+Structure:
+  AppComponent
+    aboutComponent
+    welcomeComponent
+      userListComponent
+        * list all current members
+        * routerLink to userProfileComponent
+      currentBookComponent (filter all books, show current focus books)
+      bookListComponent
+        * list all books except the current book(s)
+        * routerLink to bookDetailComponent
+    userProfileComponent
+      * user information
+      * possibly a comments area containing threads user has commented on and this user's comments
+
+    bookDetailComponent
+      * book info
+      * reviews
+      * review summary
