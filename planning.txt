@@ -28,3 +28,27 @@ Stretch Goals:
 * Add user rating system for club books
   * Rating average and number of ratings to be displayed with book
   * Users can rate books
+* Explore color/icons etc to style README
+
+Objects:
+  * User
+    Name, bio,
+    * Possibly club books read array
+
+  * Book
+    Title, Author, Description, Publish Date
+    * Spot for images? Optional
+    * User reviews
+
+  Possible Further Objects:
+    Reviews
+      Text, Rating
+      * Belongs to book
+
+    Comments
+      Text, Date
+      * Belongs to user, visible on message board area?
+      * Show number of comments
+    Replies
+      Text, Date
+      * Belongs to comment, visible on comment thread?
