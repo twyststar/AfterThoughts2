@@ -37,6 +37,11 @@ Stretch Goals:
   * Add user comments to books
   * Add reply directly to comments
 
+* Add area for users to suggest new books for the club to read
+
+* Add genre and filters
+  * Possibly different pages holding only books of that genre
+  
 * Add ability to check which club books a user has read, and add that list to their profile.
 
 * Add user rating system for club books

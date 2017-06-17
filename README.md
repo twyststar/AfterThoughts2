@@ -1,4 +1,6 @@
-# Afterthoughts
+# Afterthoughts2
+##  This is a continuation of AfterThoughts Epicodus project. Created second repository as I wanted to continue working without violating submission time limit. Will be merged with original AfterThoughts repository post code review. 
+
   _A book club site by Starlynne Start, 6.16.17_
 
 ## Detailed Description
