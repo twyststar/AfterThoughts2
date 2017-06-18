@@ -1,16 +1,14 @@
-
-
-<p>{{bookToComment.title}}</p>
-
+<br>
+<hr>
+<h3>Add a comment:</h3>
 <label>Select User Name:</label>
-<select #newUserName>
-  <option *ngFor="let user of users | async" value="{{user.name}}" >{{user.name}}</option>
+<select #newUserName >
+  <option *ngFor="let user of users | async " value="{{user.name}}" >{{user.name}}</option>
 </select>
-
 <br>
 <label >Enter Comment:</label>
 <br>
-<textarea rows="8" cols="80" #newCommentText ></textarea>
+<textarea rows="6" cols="80" #newCommentText ></textarea>
 <br>
 <!-- <input type="hidden"> -->
-<button (click)="submitCommentForm(newCommentText.value, newUserName.value)">Publish</button>
+<button (click)="submitCommentForm(newCommentText.value, newUserName.value); newUserName.value=''; NewCommentText.value='';">Publish</button>

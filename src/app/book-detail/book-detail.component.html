@@ -4,20 +4,21 @@
   <p>Published: {{(bookToDisplay | async)?.published}}</p>
   <h5>{{(bookToDisplay | async)?.description}}</h5>
   <hr>
-<button (click)="showCommentForm(bookToDisplay)">Add Comment</button>
-<div *ngIf="commentBook" class="">
-  <app-new-comment></app-new-comment>
-</div>
+
 <br>
 <br>
 <div class="well">
+
   <h3>Comments:</h3>
-  <div *ngFor="let comment of comments | async" class="panel panel-default">
+  <div *ngFor="let comment of comments | async | commentFilter:bookId " class="panel panel-default">
     <div class="panel-body">
     <h5>{{comment.commentText}}</h5>
     </div>
     <div class="panel-footer">
       <h6>by {{comment.userName}}</h6>
     </div>
+  </div>
+  <div>
+    <app-new-comment></app-new-comment>
   </div>
 </div>

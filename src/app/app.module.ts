@@ -22,6 +22,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { CurrentPipe } from './current.pipe';
 import { PastPipe } from './past.pipe';
 import { NewCommentComponent } from './new-comment/new-comment.component';
+import { CommentFilterPipe } from './comment-filter.pipe';
 
 
 export const firebaseConfig = {
@@ -48,6 +49,7 @@ export const firebaseConfig = {
     CurrentPipe,
     PastPipe,
     NewCommentComponent,
+    CommentFilterPipe,
   ],
   imports: [
     BrowserModule,
