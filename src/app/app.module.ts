@@ -21,6 +21,8 @@ import { AllBooksComponent } from './all-books/all-books.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { CurrentPipe } from './current.pipe';
 import { PastPipe } from './past.pipe';
+import { NewCommentComponent } from './new-comment/new-comment.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,7 +46,8 @@ export const firebaseConfig = {
     AllBooksComponent,
     NewUserComponent,
     CurrentPipe,
-    PastPipe
+    PastPipe,
+    NewCommentComponent,
   ],
   imports: [
     BrowserModule,
